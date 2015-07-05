@@ -88,7 +88,7 @@ declare var webkitMediaStreamTrackList: {
   new (): MediaStreamTrackList;
 };
 
-interface MediaStream extends EventTarget{
+interface MediaStream {
   label: string;
   id: string;
   getAudioTracks(): MediaStreamTrackList;
@@ -126,7 +126,7 @@ interface LocalMediaStream extends MediaStream {
   stop(): void;
 }
 
-interface MediaStreamTrack extends EventTarget{
+interface MediaStreamTrack {
   kind: string;
   label: string;
   enabled: boolean;
@@ -163,3 +163,4 @@ declare var webkitURL: {
   new (): streamURL;
   createObjectURL(stream: MediaStream): string;
 };
+
