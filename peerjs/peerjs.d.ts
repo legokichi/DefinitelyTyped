@@ -25,7 +25,7 @@ declare module PeerJs{
 
     }
 
-    interface DataConnection {
+    interface DataConnection{
         send(data: any): void;
         close(): void;
         on(event: string, cb: ()=>void): void;
@@ -46,7 +46,7 @@ declare module PeerJs{
         buffSize: number;
     }
 
-    interface MediaConnection {
+    interface MediaConnection{
         answer(stream?: any): void;
         close(): void;
         on(event: string, cb: ()=>void): void;
@@ -72,7 +72,7 @@ declare module PeerJs{
         supports: utilSupportsObj;
     }
 
-    export interface Peer {
+    export interface Peer{
         /**
          *
          * @param id The brokering ID of the remote peer (their peer.id).
